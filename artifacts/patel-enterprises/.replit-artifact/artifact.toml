@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Patel Enterprises"
+description = "A professional lead-generation website for Patel Enterprises, providing dewatering and groundwater-management support for construction, excavation, basement, and foundation works across Haryana, Delhi, NCR, and Pan India."
+version = "1.0.0"
+id = "artifacts/patel-enterprises"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 20506
+
+[services.development]
+run = "pnpm --filter @workspace/patel-enterprises run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/patel-enterprises", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/patel-enterprises/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "20506"
+BASE_PATH = "/"
