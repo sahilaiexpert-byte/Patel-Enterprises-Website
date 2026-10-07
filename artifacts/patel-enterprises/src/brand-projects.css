@@ -1,0 +1,167 @@
+.brand-logo {
+  display: block;
+  width: 96px;
+  height: auto;
+  max-height: 72px;
+  object-fit: contain;
+  flex: 0 0 auto;
+}
+
+.footer-brand .brand-logo {
+  width: 124px;
+  max-height: 94px;
+}
+
+.project-experience {
+  background: #e9e7df;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.project-card {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  min-width: 0;
+  background: var(--paper);
+  border: 1px solid #c8c9c2;
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease;
+}
+
+.project-card:hover {
+  background: #f7f5ef;
+  transform: translateY(-3px);
+}
+
+.project-media {
+  min-height: 236px;
+  position: relative;
+  overflow: hidden;
+  background: var(--navy);
+}
+
+.project-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 236px;
+  object-fit: cover;
+}
+
+.project-reference {
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+  padding: 7px 9px;
+  background: var(--navy);
+  color: var(--paper);
+  font-size: 8px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.project-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+  padding: 25px;
+}
+
+.project-number {
+  color: var(--teal);
+  font-size: 9px;
+  letter-spacing: 0.08em;
+}
+
+.project-copy h3 {
+  margin: 21px 0 16px;
+  color: var(--navy);
+  font-family: var(--app-font-serif);
+  font-size: clamp(24px, 2.3vw, 34px);
+  font-weight: 600;
+  line-height: 0.98;
+  text-transform: uppercase;
+}
+
+.project-copy p {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin: 0;
+  color: #657279;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.project-copy p svg {
+  flex: 0 0 auto;
+  margin-top: 1px;
+  color: var(--teal);
+}
+
+.project-note {
+  margin: 20px 0 0;
+  color: #68747a;
+  font-size: 8px;
+  line-height: 1.8;
+}
+
+@media (max-width: 1050px) {
+  .project-card {
+    grid-template-columns: 1fr;
+  }
+
+  .project-media,
+  .project-media img {
+    height: 200px;
+    min-height: 200px;
+  }
+
+  .project-copy {
+    min-height: 152px;
+    padding: 21px;
+  }
+}
+
+@media (max-width: 767px) {
+  .brand-logo {
+    width: 76px;
+    max-height: 58px;
+  }
+
+  .footer-brand .brand-logo {
+    width: 112px;
+    max-height: 84px;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .project-card {
+    grid-template-columns: 1fr;
+  }
+
+  .project-media,
+  .project-media img {
+    height: 220px;
+    min-height: 220px;
+  }
+
+  .project-copy {
+    min-height: 142px;
+    padding: 20px;
+  }
+
+  .project-copy h3 {
+    margin: 14px 0 10px;
+    font-size: 29px;
+  }
+}

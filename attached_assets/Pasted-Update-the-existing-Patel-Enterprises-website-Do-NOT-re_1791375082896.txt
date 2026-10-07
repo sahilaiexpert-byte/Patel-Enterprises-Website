@@ -1,0 +1,221 @@
+Update the existing Patel Enterprises website. Do NOT redesign the website from scratch and do NOT change the existing color palette, typography, spacing system, navigation style, hero design, or overall visual identity.
+
+I need two important updates:
+
+1. ADD REAL PROJECTS
+2. REPLACE THE CURRENT TEXT-ONLY LOGO WITH MY UPLOADED CUSTOM PATEL ENTERPRISES LOGO
+
+==================================================
+1. REAL PROJECTS SECTION
+==================================================
+
+The business has actually handled the following projects:
+
+1. Sarvam Signature Global Project
+   Location: Sec 37D, Gurugram, Haryana
+
+2. RPS Signature Global Project
+   Location: Sec 37D, Gurugram, Haryana
+
+3. Millennial 2
+   Location: Sec 37D, Gurugram, Haryana
+
+4. M2K Adani Realty
+   Location: Sec 102A, Dwarka Expressway, Gurugram, Haryana
+
+Add these as VERIFIED PROJECT EXPERIENCE for Patel Enterprises.
+
+IMPORTANT:
+- Do not invent project descriptions, completion dates, project sizes, contract values, client testimonials, project results, or technical specifications.
+- Do not claim that Patel Enterprises was the main contractor/developer.
+- Present them simply as projects handled/supported by Patel Enterprises.
+- Keep the wording professional and factual.
+
+Create a dedicated "PROJECTS" section/page using the existing website's visual style.
+
+Recommended heading:
+
+SELECTED PROJECT EXPERIENCE
+
+Supporting text:
+
+"Selected construction projects where Patel Enterprises has provided dewatering and groundwater-management support."
+
+Create four premium project cards:
+
+PROJECT 01
+SARVAM SIGNATURE GLOBAL
+Sec 37D, Gurugram, Haryana
+
+PROJECT 02
+RPS SIGNATURE GLOBAL
+Sec 37D, Gurugram, Haryana
+
+PROJECT 03
+MILLENNIAL 2
+Sec 37D, Gurugram, Haryana
+
+PROJECT 04
+M2K ADANI REALTY
+Sec 102A, Dwarka Expressway, Gurugram, Haryana
+
+Each card should have:
+- Project name
+- Location
+- Clean project number
+- Professional construction/dewatering visual if an appropriate image is available
+- Subtle hover interaction
+- Consistent styling with the existing website
+
+IMPORTANT:
+Do NOT use stock imagery and imply that it is an actual project photograph.
+
+If actual project photographs are not available, use a clean neutral construction/dewatering visual and clearly label it as "Project reference" rather than pretending it is an actual project photograph.
+
+At the bottom of the section add:
+
+"Selected project experience. Project details are presented for portfolio reference."
+
+Do not add fake statistics such as "50+ projects", "100+ sites", etc.
+
+==================================================
+2. CUSTOM PATEL ENTERPRISES LOGO
+==================================================
+
+I will upload the official/custom Patel Enterprises logo as an image asset.
+
+Use the uploaded logo as the PRIMARY BRAND LOGO throughout the website.
+
+Replace the current text-based "P PATEL ENTERPRISES E" logo wherever it appears with the uploaded logo.
+
+Use the exact uploaded logo without:
+- changing its design
+- recreating it with text
+- changing its colors
+- adding effects
+- stretching it
+- distorting its proportions
+
+Maintain the original aspect ratio.
+
+Use the uploaded logo in:
+
+1. Header/navbar
+2. Footer
+3. Mobile navigation/header
+4. Any other existing brand-logo placement
+
+The header logo should remain compact and professionally sized so it does not make the navbar taller.
+
+On mobile, make sure the logo remains clearly visible without taking excessive horizontal space.
+
+==================================================
+3. PROJECT NAVIGATION
+==================================================
+
+The existing navigation already contains:
+
+HOME
+ABOUT
+SERVICES
+APPLICATIONS
+HOW WE WORK
+PROJECTS
+CONTACT
+
+Keep this navigation.
+
+Make the PROJECTS navigation item scroll/navigate to the new real "Selected Project Experience" section/page.
+
+Do NOT create unnecessary additional pages.
+
+Recommended final main structure:
+
+HOME
+ABOUT
+SERVICES
+APPLICATIONS
+HOW WE WORK
+PROJECTS
+CONTACT
+
+==================================================
+4. IMPORTANT DESIGN RULE
+==================================================
+
+The current website already has a strong premium industrial/engineering aesthetic.
+
+Preserve:
+- Navy blue
+- Warm off-white
+- Yellow accent
+- Teal accent
+- Condensed display typography
+- Thin borders
+- Editorial/industrial layout
+- Existing spacing
+- Existing animations
+- Existing responsive behavior
+
+Do not introduce:
+- Generic SaaS UI
+- Glassmorphism
+- Excessive rounded cards
+- Gradients
+- Random colors
+- Generic startup-style sections
+
+The new Projects section must look like it was part of the original website from day one.
+
+==================================================
+5. CONTENT ACCURACY
+==================================================
+
+These are real projects supplied by the business.
+
+Use the exact names and locations provided above.
+
+Do not add unsupported claims.
+
+If there is uncertainty about the exact capitalization of a project name, preserve the supplied name rather than inventing a different name.
+
+==================================================
+6. RESPONSIVE DESIGN
+==================================================
+
+Desktop:
+- Premium 2-column or grid project layout
+- Strong visual hierarchy
+- Plenty of whitespace
+
+Tablet:
+- Responsive 2-column layout where appropriate
+
+Mobile:
+- Single-column project cards
+- No horizontal overflow
+- Project name and location clearly readable
+- Logo remains correctly sized
+- Navigation remains usable
+
+==================================================
+7. FINAL QA
+==================================================
+
+After implementation verify:
+
+- Uploaded logo appears correctly in header and footer
+- Logo is not stretched or blurry
+- Projects section is visible from navigation
+- All four projects are present
+- Locations are correct
+- No fake project information has been added
+- Existing sections have not been unnecessarily redesigned
+- No layout breaks on mobile
+- No horizontal scrolling
+- Existing CTA buttons still work
+- Existing contact form functionality remains intact
+- No placeholder project names remain
+- Remove any old "illustrative projects" wording from the PROJECTS section if it conflicts with the newly added verified project experience
+
+Do not remove the general disclaimer for any remaining stock/illustrative images elsewhere on the website unless those images are replaced with genuine Patel Enterprises photographs.

@@ -1,10 +1,12 @@
 import { useEffect, useState, type FormEvent } from 'react';
 import { ArrowDown, ArrowRight, ArrowUpRight, Check, ChevronLeft, ChevronRight, Droplets, FileText, Gauge, HardHat, Layers3, MapPin, Menu, Phone, Pipette, ShieldCheck, Waves, X } from 'lucide-react';
 import './site.css';
+import './brand-projects.css';
 import heroImage from './assets/dewatering-hero.jpg';
 import siteOne from './assets/dewatering-site-1.jpg';
 import siteTwo from './assets/dewatering-site-2.jpg';
 import siteThree from './assets/dewatering-site-3.jpg';
+import brandLogo from '../../../attached_assets/WhatsApp_Image_2026-10-07_at_5.26.14_PM_1791375104786.jpeg';
 
 const phone = '+91-8685902932';
 const email = 'patelmotor125@gmail.com';
@@ -36,11 +38,16 @@ const gallery = [
   { src: heroImage, alt: 'Illustrative deep construction excavation with groundwater pumping arrangements', label: 'Groundwater control' },
   { src: siteTwo, alt: 'Illustrative construction site with an excavation and foundation work area', label: 'Construction sites' },
 ];
+const projects = [
+  { name: 'Sarvam Signature Global Project', location: 'Sec 37D, Gurugram, Haryana', image: siteOne, alt: 'Project reference image: illustrative construction dewatering scene, not a photograph of this project' },
+  { name: 'RPS Signature Global Project', location: 'Sec 37D, Gurugram, Haryana', image: siteTwo, alt: 'Project reference image: illustrative excavation scene, not a photograph of this project' },
+  { name: 'Millennial 2', location: 'Sec 37D, Gurugram, Haryana', image: siteThree, alt: 'Project reference image: illustrative pump and discharge arrangement, not a photograph of this project' },
+  { name: 'M2K Adani Realty', location: 'Sec 102A, Dwarka Expressway, Gurugram, Haryana', image: heroImage, alt: 'Project reference image: illustrative groundwater management scene, not a photograph of this project' },
+];
 
 function Brand({ inverse = false }: { inverse?: boolean }) {
   return <a href="#home" className={`brand ${inverse ? 'brand-inverse' : ''}`} aria-label="Patel Enterprises home" data-testid="link-brand">
-    <span className="brand-mark" aria-hidden="true"><span>P</span><i>E</i></span>
-    <span className="brand-copy"><b>PATEL ENTERPRISES</b><small>DEWATERING & GROUNDWATER</small></span>
+    <img className="brand-logo" src={brandLogo} alt="Patel Enterprises" width="1454" height="1082" />
   </a>;
 }
 
@@ -85,7 +92,7 @@ function App() {
     form.reset();
     setFileNames([]);
   };
-  const navItems = [['Home', '#home'], ['About', '#about'], ['Services', '#services'], ['Applications', '#applications'], ['How we work', '#process'], ['Projects', '#gallery'], ['Contact', '#contact']];
+  const navItems = [['Home', '#home'], ['About', '#about'], ['Services', '#services'], ['Applications', '#applications'], ['How we work', '#process'], ['Projects', '#projects'], ['Contact', '#contact']];
   return <div className="site-shell grain">
     <div className="topline"><div className="wrap top-line-inner"><span className="mono">Groundwater management / construction support</span><span className="top-location"><MapPin size={13} /> Haryana · Delhi · NCR · Pan India</span></div></div>
     <header className="header">
@@ -172,6 +179,25 @@ function App() {
         <div className="why-content"><div className="why-inner reveal"><p className="eyebrow mono">05 / The Patel approach</p><h2 className="display">Built around<br />the needs of<br />your site.</h2><p className="why-lead">The right arrangement starts with the conditions on the ground—and stays connected to the work as those conditions change.</p>
           <ul className="why-list">{['Site-focused execution', 'Flexible deployment', 'Complete dewatering coordination', 'Responsive operational support'].map((item, i) => <li key={item}><span className="mono">0{i + 1}</span><b>{item}</b><Check size={16} /></li>)}</ul></div></div>
       </section>
+      <section id="projects" className="project-experience section-pad">
+        <div className="wrap">
+          <div className="section-heading reveal"><div><p className="eyebrow mono">Selected experience / Haryana</p><h2 className="display section-title">Selected project<br /><span>experience.</span></h2></div><p className="heading-aside">Selected construction projects where Patel Enterprises has provided dewatering and groundwater-management support.</p></div>
+          <div className="project-grid">
+            {projects.map((project, index) => <article className="project-card reveal" key={project.name} data-testid={`card-project-${index + 1}`}>
+              <div className="project-media">
+                <img src={project.image} alt={project.alt} width="1200" height="800" loading="lazy" />
+                <span className="project-reference mono">Project reference</span>
+              </div>
+              <div className="project-copy">
+                <span className="project-number mono">PROJECT 0{index + 1}</span>
+                <h3>{project.name}</h3>
+                <p><MapPin size={15} aria-hidden="true" />{project.location}</p>
+              </div>
+            </article>)}
+          </div>
+          <p className="project-note mono">Selected project experience. Project details are presented for portfolio reference.</p>
+        </div>
+      </section>
       <section id="gallery" className="gallery-section section-pad">
         <div className="wrap">
           <div className="section-heading reveal"><div><p className="eyebrow mono">06 / Site imagery</p><h2 className="display section-title">The work, in context.</h2></div><p className="heading-aside">Illustrative site imagery only. Images do not represent Patel Enterprises projects.</p></div>
@@ -214,7 +240,7 @@ function App() {
         <div className="wrap gst-strip"><span className="mono">GSTIN</span><b>06AFRPF8423J1Z5</b><span className="gst-rule"></span><span className="mono">Coverage</span><b>Haryana · Delhi · NCR · Pan India</b></div>
       </section>
     </main>
-    <footer className="footer"><div className="wrap footer-main"><div className="footer-brand"><Brand inverse /><p>Professional dewatering and groundwater-management support for construction, excavation and foundation works.</p></div><div className="footer-nav"><span className="mono">Explore</span><div>{[['Home','#home'],['About','#about'],['Services','#services'],['Applications','#applications'],['How we work','#process'],['Contact','#contact']].map(([text,href])=><a href={href} key={href} data-testid={`footer-${text.toLowerCase().replaceAll(' ','-')}`}>{text}</a>)}</div></div><div className="footer-contact"><span className="mono">Get in touch</span><a href={`tel:${phone}`}>+91-8685902932</a><a href={`mailto:${email}`}>{email}</a><p>Guruji Complex, Rewari 123401, Haryana</p><small>GSTIN 06AFRPF8423J1Z5</small></div></div><div className="wrap footer-bottom"><span>© Patel Enterprises. All rights reserved.</span><span className="mono">Dewatering & Groundwater Management</span><a href="#home" aria-label="Back to top" data-testid="link-back-to-top">Back to top ↑</a></div></footer>
+      <footer className="footer"><div className="wrap footer-main"><div className="footer-brand"><Brand inverse /><p>Professional dewatering and groundwater-management support for construction, excavation and foundation works.</p></div><div className="footer-nav"><span className="mono">Explore</span><div>{[['Home','#home'],['About','#about'],['Services','#services'],['Applications','#applications'],['How we work','#process'],['Projects','#projects'],['Contact','#contact']].map(([text,href])=><a href={href} key={href} data-testid={`footer-${text.toLowerCase().replaceAll(' ','-')}`}>{text}</a>)}</div></div><div className="footer-contact"><span className="mono">Get in touch</span><a href={`tel:${phone}`}>+91-8685902932</a><a href={`mailto:${email}`}>{email}</a><p>Guruji Complex, Rewari 123401, Haryana</p><small>GSTIN 06AFRPF8423J1Z5</small></div></div><div className="wrap footer-bottom"><span>© Patel Enterprises. All rights reserved.</span><span className="mono">Dewatering & Groundwater Management</span><a href="#home" aria-label="Back to top" data-testid="link-back-to-top">Back to top ↑</a></div></footer>
     <div className="mobile-sticky-actions"><a href={`tel:${phone}`} data-testid="mobile-call"><Phone size={17} /> Call</a><a href="https://wa.me/918685902932" target="_blank" rel="noopener noreferrer" data-testid="mobile-whatsapp">WhatsApp <ArrowUpRight size={16} /></a></div>
     {lightbox !== null && <div className="lightbox" role="dialog" aria-modal="true" aria-label="Illustrative site photo viewer" onClick={() => setLightbox(null)} data-testid="gallery-lightbox"><button className="lightbox-close" type="button" aria-label="Close image viewer" onClick={() => setLightbox(null)} data-testid="button-lightbox-close"><X /></button><button className="lightbox-prev" type="button" aria-label="Previous image" onClick={event => { event.stopPropagation(); setLightbox((lightbox + gallery.length - 1) % gallery.length); }} data-testid="button-lightbox-prev"><ChevronLeft /></button><figure onClick={event => event.stopPropagation()}><img src={gallery[lightbox].src} alt={gallery[lightbox].alt} width="1200" height="800" /><figcaption><span className="mono">ILLUSTRATIVE SITE IMAGERY · NOT PATEL PROJECT PROOF</span><b>{gallery[lightbox].label}</b></figcaption></figure><button className="lightbox-next" type="button" aria-label="Next image" onClick={event => { event.stopPropagation(); setLightbox((lightbox + 1) % gallery.length); }} data-testid="button-lightbox-next"><ChevronRight /></button></div>}
   </div>;
