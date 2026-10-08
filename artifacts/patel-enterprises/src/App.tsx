@@ -6,7 +6,8 @@ import heroImage from './assets/dewatering-hero.jpg';
 import siteOne from './assets/dewatering-site-1.jpg';
 import siteTwo from './assets/dewatering-site-2.jpg';
 import siteThree from './assets/dewatering-site-3.jpg';
-import brandLogo from '../../../attached_assets/WhatsApp_Image_2026-10-07_at_5.26.14_PM_1791375104786.jpeg';
+import blackLogo from '../../../attached_assets/black_logo_1791494372513.png';
+import whiteLogo from '../../../attached_assets/white_logo_1791494372513.png';
 
 const phone = '+91-8685902932';
 const email = 'patelmotor125@gmail.com';
@@ -47,7 +48,7 @@ const projects = [
 
 function Brand({ inverse = false }: { inverse?: boolean }) {
   return <a href="#home" className={`brand ${inverse ? 'brand-inverse' : ''}`} aria-label="Patel Enterprises home" data-testid="link-brand">
-    <img className="brand-logo" src={brandLogo} alt="Patel Enterprises" width="1454" height="1082" />
+    <img className="brand-logo" src={inverse ? whiteLogo : blackLogo} alt="Patel Enterprises" width="1454" height="1082" />
   </a>;
 }
 
